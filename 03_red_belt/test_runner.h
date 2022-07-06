@@ -97,15 +97,15 @@ private:
 };
 
 #define ASSERT_EQUAL(x, y) { \
-  ostringstream os; \
-  os << #x << " != " << #y << ", " << __FILE__ << ":" << __LINE__; \
-  AssertEqual(x, y, os.str()); \
+  ostringstream __assert_equal_private_os; \
+  __assert_equal_private_os << #x << " != " << #y << ", " << __FILE__ << ":" << __LINE__; \
+  AssertEqual(x, y, __assert_equal_private_os.str()); \
 }
 
 #define ASSERT(x) { \
-  ostringstream os; \
-  os << #x << " is false, " << __FILE__ << ":" << __LINE__; \
-  Assert(x, os.str()); \
+  ostringstream __assert_private_os; \
+  __assert_private_os << #x << " is false, " << __FILE__ << ":" << __LINE__; \
+  Assert(x, __assert_private_os.str()); \
 }
 
 #define RUN_TEST(tr, func) \
