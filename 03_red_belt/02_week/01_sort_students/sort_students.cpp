@@ -1,6 +1,6 @@
 #include "student.h"
 #include "test_runner.h"
-#include "log_duration.h"
+#include "profile.h"
 
 #include <algorithm>
 

@@ -5,7 +5,7 @@
 #include <iostream>
 #include <sstream>
 
-#include "log_duration.h"
+#include "profile.h"
 
 using namespace std;
 
