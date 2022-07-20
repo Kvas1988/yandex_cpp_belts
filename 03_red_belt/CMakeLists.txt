@@ -16,3 +16,6 @@ add_executable(w3ex01 03_week/01_object_pool/object_pool.cpp)
 add_executable(w3ex02 03_week/02_swap_sort_copy/swap_sort_copy.cpp)
 add_executable(w3ex03 03_week/03_simple_vector/simple_vector.cpp)
 add_executable(w3ex04 03_week/04_linked_list/linked_list.cpp)
+
+add_executable(w4ex01 04_week/01_athletes/athletes.cpp)
+add_executable(w4ex02 04_week/02_stack_vector/stack_vector.cpp)
