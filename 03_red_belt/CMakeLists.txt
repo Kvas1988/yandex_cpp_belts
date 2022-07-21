@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 set (CMAKE_CXX_STANDARD 17)
-set (CMAKE_CXX_FLAGS "-O3")
+#set (CMAKE_CXX_FLAGS "-O3")
 
 project (red_belt)
 
@@ -23,3 +23,8 @@ add_executable(w4ex02 04_week/02_stack_vector/stack_vector.cpp)
 add_executable(w4ex03 04_week/03_translator/translator.cpp)
 add_executable(w4ex04 04_week/04_airport_counter/airport_counter.cpp)
 add_executable(w4ex05 04_week/05_text_editor/text_editor.cpp)
+
+#include_directories(04_week/06_web_server)
+add_library(stats 04_week/06_web_server/stats.cpp)
+add_executable(w4ex06 04_week/06_web_server/server_stats.cpp)
+target_link_libraries(w4ex06 stats)
