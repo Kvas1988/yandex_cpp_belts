@@ -6,18 +6,22 @@ project (red_belt)
 
 include_directories(./)
 
+#week 1
 add_executable(w1ex01 01_week/01_max_element_if/max_element_if.cpp)
 add_executable(w1ex02 01_week/02_log/log.cpp)
 
+#week 2
 add_executable(w2ex01 02_week/01_sort_students/sort_students.cpp)
 add_executable(w2ex02 02_week/02_learner/learner.cpp)
 add_executable(w2ex03 02_week/03_express/express.cpp)
 
+#week 3
 add_executable(w3ex01 03_week/01_object_pool/object_pool.cpp)
 add_executable(w3ex02 03_week/02_swap_sort_copy/swap_sort_copy.cpp)
 add_executable(w3ex03 03_week/03_simple_vector/simple_vector.cpp)
 add_executable(w3ex04 03_week/04_linked_list/linked_list.cpp)
 
+#week 4
 add_executable(w4ex01 04_week/01_athletes/athletes.cpp)
 add_executable(w4ex02 04_week/02_stack_vector/stack_vector.cpp)
 add_executable(w4ex03 04_week/03_translator/translator.cpp)
@@ -28,3 +32,6 @@ add_executable(w4ex05 04_week/05_text_editor/text_editor.cpp)
 add_library(stats 04_week/06_web_server/stats.cpp)
 add_executable(w4ex06 04_week/06_web_server/server_stats.cpp)
 target_link_libraries(w4ex06 stats)
+
+#week 5
+add_executable(w5ex01 05_week/01_josephus_permutation/josephus_permutation.cpp)
