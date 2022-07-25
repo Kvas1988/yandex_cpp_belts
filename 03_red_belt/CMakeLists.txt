@@ -38,3 +38,4 @@ add_executable(w5ex01 05_week/01_josephus_permutation/josephus_permutation.cpp)
 # 2-7 skipped
 add_executable(w5ex08 05_week/08_matrix_sum/matrix_sum.cpp)
 add_executable(w5ex09 05_week/09_explore_key_words/explore_key_words.cpp)
+add_executable(w5ex10 05_week/10_synchronized/synchronized.cpp)
